@@ -1,27 +1,26 @@
 <?php
 /**
  * @file
- * @author Lee Martin
- * Contains \Drupal\d8dev\Controller\d8devController
- *
- * To be includes under d8dev(module_root_folder)/src/Controller/
- *
+ * @author My Name
+ * Contains \Drupal\d8dev\Controller\d8devController.
+ * Please include this file under your
+ * d8dev(module_root_folder)/src/Controller/
  */
 namespace Drupal\d8dev\Controller;
-
 /**
- * Provides responses for the d8dev module.
+ * Provides route responses for the d8dev module.
  */
-class d8devController{
+class d8devController {
 	/**
+	 * Returns a simple page.
 	 *
 	 * @return array
-	 *  A simple renderable array
+	 *   A simple renderable array.
 	 */
-	public function myPage(){
+	public function myPage() {
 		$element = array(
 			'#type' => 'markup',
-			'#markup' => 'A bunch of things',
+			'#markup' => 'd8Dev Words!',
 		);
 		return $element;
 	}
