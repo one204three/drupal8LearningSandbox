@@ -1,0 +1,7 @@
+d8dev.my_page:
+path: '/mypage/page'
+defaults:
+  _controller: '\Drupal\d8dev\Controller\d8devController::myPage'
+  _title: 'My first Drupal 8 page'
+  requirements:
+    _permission: 'access content'
