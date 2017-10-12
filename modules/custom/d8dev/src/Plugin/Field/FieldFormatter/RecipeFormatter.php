@@ -29,7 +29,7 @@ class RecipeTimeFormatter extends FormatterBase{
 	 * {@inheritdoc}
 	 */
 
-	public function viewElements( FieldItemListInterface $items) {
+	public function viewElements( FieldItemListInterface $items, $lang) {
 		$elements = array();
 
 		foreach($items as $delta=>$item){
@@ -40,7 +40,7 @@ class RecipeTimeFormatter extends FormatterBase{
 
 			//$minutes_fraction = '<sup>' . $minutes/$minutes_gcd . '</sup>&frasl;<sub>' . 60/$minutes_gcd .'</sub>';
 			$minutes_fraction = $minutes/$minutes_gcd . "/" . 60/$minutes_gcd;
-			$markup = $hours > 0 ? $hours . ' and ' . $minutes_fraction . ' hours' : $mimnutes_fraction . 'hours';
+			$markup = $hours > 0 ? $hours . ' and ' . $minutes_fraction . ' hours' : $minutes_fraction . 'hours';
 			$elements[$delta] = array('#theme' => 'recipe_time_display', '#value' => $markup);
 		}
 		return $elements;
