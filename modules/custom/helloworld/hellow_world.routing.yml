@@ -3,5 +3,5 @@ hello_world.content:
   defaults:
     _controller: '\Drupal\hello_world\Controller\HelloController::content'
     _title: 'Hello World'
-  requirements:
-    _permission: 'access content'
+    requirements:
+      _permission: 'access content'
