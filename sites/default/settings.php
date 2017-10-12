@@ -6,6 +6,13 @@
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 /**
+ * DEV SETTINGS
+ */
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
+/**
  * Include the Pantheon-specific settings file.
  *
  * n.b. The settings.pantheon.php file makes some changes
