@@ -1,6 +1,0 @@
-name: Drupal 8 custom module d8dev
-type: module
-description: 'Custom Module example for Drupal 8'
-package: Custom
-version: 0.1
-core: 8.x
